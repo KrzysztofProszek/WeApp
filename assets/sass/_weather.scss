@@ -10,9 +10,15 @@
 
 .weather {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 
     &__title {
-        color: #fff;
+        color: $titleColor;
+        @include fluid-type(320px, 1920px, 30px, 60px);
+        margin: 0 0 40px 0;
     }
 
     &__description {
